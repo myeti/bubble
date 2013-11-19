@@ -37,10 +37,18 @@ $bubble->gum('welcome', [
 ]);
 ```
 
+or to all templates :
+
+```php
+$bubble->gum('*', [
+    'today' => date('Y-m-d')
+]);
+```
+
 And, in the template `pages/welcome.php` :
 
 ```php
-<aside>Today : <?= $today ?></aside>
+Hi ! Today we are : <?= $today ?>
 ```
 
 ### Default paths
